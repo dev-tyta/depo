@@ -13,7 +13,7 @@ def load_model():
     """
     try:
         # Load the pre-trained model from a pickle file
-        model = joblib.load('rf_classifier_model_1.pkl')
+        model = joblib.load('rf_classifier_model.pkl')
         return model
     except FileNotFoundError:
         st.error("The model file 'voting_classifier_model.pkl' was not found.")
